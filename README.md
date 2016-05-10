@@ -58,7 +58,8 @@ Adapt the provided `.conf.example` files to create your custom bot:
  - `packages.conf` should contain a list of other npm packages to include with
    your bot.
 
-Any coffee scripts placed in `scripts` will also be packaged.
+Any [.coffee](http://coffeescript.org/) scripts placed in the `scripts`
+directory will also be packaged.
 
 ## Build
 
