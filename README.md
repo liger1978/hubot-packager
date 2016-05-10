@@ -6,20 +6,21 @@ into an RPM suitable for deployment on RHEL/CentOS 7.
 This vagrant project will package hubot into an RPM, including selected external
 scripts and packages.  The resulting RPM package will:
 
-  - Deploy hubot into the specified directory on the target system.
-  - Create a configuration file `/etc/sysconfig` containing hubot's environment
-    variables.
+  - Deploy hubot into the specified directory on the target system, e.g. 
+    `/opt/hubot-[your_suffix]`
+  - Create a configuration file `/etc/sysconfig/hubot-[your_suffix]` containing
+    hubot's environment variables.
   - Create a dedicated system user and group for running the bot.
   - Create a systemd unit file so that hubot can be controlled with the standard
     service management commands, e.g.:
 
 ```bash
-systemctl start hubot-bigcorp
-systemctl stop hubot-bigcorp
-systemctl restart hubot-bigcorp
-systemctl status hubot-bigcorp
-systemctl enable hubot-bigcorp
-systemctl disable hubot-bigcorp
+systemctl start hubot-[your_suffix]
+systemctl stop hubot-[your_suffix]
+systemctl restart hubot-[your_suffix]
+systemctl status hubot-[your_suffix]
+systemctl enable hubot-[your_suffix]
+systemctl disable hubot-[your_suffix]
 ```
 
 ## Build requirements
@@ -65,7 +66,7 @@ Initial build:
 ```bash
 vagrant up
 ```
-Subsequest rebuilds:
+Subsequent rebuilds:
 
 ```bash
 vagrant provision
