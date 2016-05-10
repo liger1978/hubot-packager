@@ -1,0 +1,12 @@
+config.conf
+external-scripts.conf
+packages.conf
+env.conf
+.vagrant*
+*.rpm
+*.tar.gz
+*.zip
+*.deb
+tmp/
+.tmp/
+*.stackdump
