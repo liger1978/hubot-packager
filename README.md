@@ -49,15 +49,6 @@ Adapt the provided `.conf.example` files to create your custom bot:
    your bot.
 
 Any coffee scripts placed in `scripts` will also be packaged.
- 
-## Target system requirements
-The built RPM package is suitable for deployment on EL 7 (RHEL, CentOS, etc).
-The package is built with two specified dependencies:
-
-1. redis (no version specified).  The version in the
-[EPEL](https://fedoraproject.org/wiki/EPEL) repo works fine.
-2. nodejs >= 5 or above. I used the
-[nodesource repo](https://rpm.nodesource.com/pub_5.x/el/7/x86_64/)
 
 ## Build
 
@@ -74,3 +65,12 @@ vagrant provision
 
 Be sure to increment your `BOT_RELEASE` number in `config.conf` before
 rebuilding.
+
+## Target system requirements
+The built RPM package is suitable for deployment on EL 7 (RHEL, CentOS, etc).
+The package is built with two specified dependencies:
+
+1. redis (no version specified).  The version in the
+[EPEL](https://fedoraproject.org/wiki/EPEL) repo works fine.
+2. nodejs >= 5 or above. I used the
+[nodesource repo](https://rpm.nodesource.com/pub_5.x/el/7/x86_64/)
