@@ -52,7 +52,7 @@ EOF
 cat << EOF > "/tmp/pre-script.sh"
 getent group ${PKG_NAME} >/dev/null || groupadd -r ${PKG_NAME}
 getent passwd ${PKG_NAME} >/dev/null || \
-    useradd -r -g ${PKG_NAME} -d /home/${PKG_NAME} -s /bin/bash \
+    useradd -r -g ${PKG_NAME} -d ${INSTALL_DIR}/${PKG_NAME} -s /bin/bash \
     -c "${DESCRIPTION}" ${PKG_NAME}
 exit 0
 EOF
