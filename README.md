@@ -82,7 +82,7 @@ rebuilding.
 The built RPM package is suitable for deployment on EL 7 (RHEL, CentOS, etc).
 The package is built with two specified dependencies:
 
-1. redis (no version specified).  The version in the
+1. `redis` (no version specified).  The version in the
 [EPEL](https://fedoraproject.org/wiki/EPEL) repo works fine.
-2. nodejs >= 5 or above. I used the
+2. `nodejs >= 5`. I used the
 [nodesource repo](https://rpm.nodesource.com/pub_5.x/el/7/x86_64/)
