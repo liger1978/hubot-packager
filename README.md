@@ -28,6 +28,16 @@ systemctl disable hubot-[your_suffix]
 1. [Vagrant](https://www.vagrantup.com/).
 2. A hypervisor. I used [VirtualBox](https://www.virtualbox.org/).
 
+## Download
+
+```bash
+git clone https://github.com/liger1978/hubot-packager.git
+```
+
+Or download
+[release archive](https://github.com/liger1978/hubot-packager/releases) and
+unzip.
+
 ## Configure
 Adapt the provided `.conf.example` files to create your custom bot:
 
@@ -55,6 +65,7 @@ Any coffee scripts placed in `scripts` will also be packaged.
 Initial build:
 
 ```bash
+cd hubot-packager
 vagrant up
 ```
 Subsequent rebuilds:
