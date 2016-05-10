@@ -40,8 +40,9 @@ Adapt the provided `.conf.example` files to create your custom bot:
    API keys and passwords in your RPM file. Instead add these to the file on the
    target system by hand or using your favourite systems configuration utility.
    
- - `external-scripts.conf` should contain a list of npm hubot scripts to include
-   with your bot.
+ - `external-scripts.conf` should contain a list of npm
+   [hubot scripts](https://www.npmjs.com/search?q=hubot) to include with your
+   bot.
  
  - `packages.conf` should contain a list of other npm packages to include with
    your bot.
@@ -52,7 +53,7 @@ Any coffee scripts placed in `scripts` will also be packaged.
 The built RPM package is suitable for deployment on EL 7 (RHEL, CentOS, etc).
 The package is built with two specified dependencies:
 
-1. redis (no version specified.  The version in the
+1. redis (no version specified).  The version in the
 [EPEL](https://fedoraproject.org/wiki/EPEL) repo works fine.
 2. nodejs >= 5 or above. I used the
 [nodesource repo](https://rpm.nodesource.com/pub_5.x/el/7/x86_64/)
