@@ -28,7 +28,7 @@ systemctl disable hubot-[your_suffix]
 1. [Vagrant](https://www.vagrantup.com/).
 2. A hypervisor. I used [VirtualBox](https://www.virtualbox.org/).
 
-## Configuration
+## Configure
 Adapt the provided `.conf.example` files to create your custom bot:
 
  - `config.conf` should contain package configuration options.
